@@ -76,7 +76,7 @@ git clone https://github.com/endbit/painel-administrativo.git
 ## Entre na pasta
 
 ```bash
-cd seuprojeto
+cd painel-administrativo
 ```
 
 ---
