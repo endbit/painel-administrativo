@@ -115,7 +115,7 @@ export default function Configuracoes() {
 
                                     <input
                                         type="text"
-                                        defaultValue="Endrick"
+                                        defaultValue="Admin"
                                         className="w-full h-12 bg-white/5 border border-white/10 rounded-2xl px-4 text-white outline-none focus:border-cyan-400"
                                     />
                                 </div>

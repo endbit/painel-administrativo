@@ -158,7 +158,7 @@ export default function Sidebar({
 
                             <div className="flex-1">
                                 <h3 className="text-white font-semibold">
-                                    Endrick
+                                    Admin
                                 </h3>
 
                                 <p className="text-zinc-400 text-sm">
