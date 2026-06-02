@@ -1,0 +1,33 @@
+import { Outlet } from "react-router-dom";
+import { useState } from "react";
+
+import Sidebar from "../Sidebar/Sidebar";
+import Header from "../Header/Header";
+
+export default function PrivateLayout() {
+    const [sidebarOpen, setSidebarOpen] =
+        useState(false);
+
+    return (
+        <div className="h-screen overflow-hidden bg-gray-900 flex">
+            {/* Sidebar */}
+            <Sidebar
+                sidebarOpen={sidebarOpen}
+                setSidebarOpen={setSidebarOpen}
+            />
+
+            {/* Área principal */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                {/* Header */}
+                <Header
+                    setSidebarOpen={setSidebarOpen}
+                />
+
+                {/* Conteúdo com scroll */}
+                <main className="flex-1 overflow-y-auto p-4 lg:p-8">
+                    <Outlet />
+                </main>
+            </div>
+        </div>
+    );
+}
