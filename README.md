@@ -68,7 +68,7 @@ src/
 ## Clone o projeto
 
 ```bash
-git clone https://github.com/seuusuario/seuprojeto.git
+git clone https://github.com/endbit/painel-administrativo.git
 ```
 
 ---
