@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
+import AnimatedOutlet from "../AnimatedOutlet/AnimatedOutlet";
 
 export default function PrivateLayout() {
     const [sidebarOpen, setSidebarOpen] =
@@ -25,7 +26,9 @@ export default function PrivateLayout() {
 
                 {/* Conteúdo com scroll */}
                 <main className="flex-1 overflow-y-auto p-4 lg:p-8">
-                    <Outlet />
+                    <AnimatedOutlet>
+                        <Outlet />
+                    </AnimatedOutlet>
                 </main>
             </div>
         </div>
